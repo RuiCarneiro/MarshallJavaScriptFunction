@@ -18,7 +18,7 @@ returns `login("username", "password")` notice that it did put the `"` properly.
 
     print(jsCallString(function: "difficultArguments", arguments: "backlash: \\", ["zero": 0, "one": 1]))
 
-returns `difficultArguments("backlash: \\", ["zero": 0, "one": 1])` 
+returns `difficultArguments("backlash: \\", ["zero": 0, "one": 1])`
 
 ## Dependecies
 
@@ -30,4 +30,4 @@ You can use it with your free or comercial App, open or closed-source, and you c
 
 To use with your project, just open the Xcode project, build the Framework and add it to your project.
 
-Or simply import the MarshallJavaScriptFunction.swift file to your project.
+Or simply import the `MarshallJavaScriptFunction.swift` file to your project.
