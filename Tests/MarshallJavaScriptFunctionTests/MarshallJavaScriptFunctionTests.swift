@@ -3,6 +3,12 @@ import XCTest
 
 final class MarshallJavaScriptFunctionTests: XCTestCase {
 
+    func testEmpty() {
+        let expected = "empty()"
+        let test = jsCallString(function: "empty")
+        XCTAssert(expected == test, "empty test")
+    }
+
     func testString() {
         let expected = "string(\"abc\\\\xy\\nz\")"
         let test = jsCallString(function: "string", arguments: "abc\\xy\nz")
